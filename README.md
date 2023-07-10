@@ -7,7 +7,7 @@ O objetivo do mini sistema é a criação e identificação do usuário com senh
 ### Sistema
 O mini sistema tem os seguintes scripts em python:
 
--sistema.py Contém a main do sistema, ou seja, é o script principal do sistema.
+- main_system.py Contém a main do sistema, ou seja, é o script principal do sistema.
 - function.py: contém todas as funções do sistema; para mais detalhes, leia a parte de
 documentação das funções.
 - add_user.py: contém a funcionalidade de inserir ou deletar usuários no sistema.
