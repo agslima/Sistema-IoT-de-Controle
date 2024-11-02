@@ -40,7 +40,7 @@ while True:
 		if pessoa:
 			erro = 0
 			print ('Bem vindo: ' + str(pessoa))
-#			abre_porta()
+                        # abre_porta()
 		else:
 			erro += 1
 			print ('Senha incorreta')
