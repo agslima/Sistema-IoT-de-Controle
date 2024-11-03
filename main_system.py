@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-#	Sistema de controle de acesso com senha
+#	Sistema IoT de controle de acesso com senha
 #	main_system: Código principal do Sistema de controle
 #
 #	This program is free software; you can redistribute it and/or modify
