@@ -1,3 +1,4 @@
+[![license](https://img.shields.io/github/license/agslima/Sistema-IoT-de-Controle?style=flat-square)](https://raw.githubusercontent.com/agslima/Sistema-IoT-de-Controle/master/LICENSE)
 # Sistema de Controle Iot
 
 Sistema para controle de entrada e saída de usuário, implementado em RaspberryPi com conceitos em IoT.
