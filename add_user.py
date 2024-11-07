@@ -20,31 +20,31 @@
 
 from function import *
 
-pasta_padrao = '' #Diretorio em que se encontra os scripts e dados do sistema
+pasta_padrao = '' # Diretorio em que se encontra os scripts e dados do sistema
 senhas_ruins = pasta_padrao + 'bad_password.csv'
-arquivo_senhas = pasta_padrao + 'passwords.csv' #Nome do arquivo que armazena o Hash das senhas junto com o nome do portador da senha
+arquivo_senhas = pasta_padrao + 'passwords.csv' # Nome do arquivo que armazena o Hash das senhas junto com o nome do portador da senha
 
 ########################## FUNCTIONS ################################
 
-#Retorna se eh uma senha valida ou nao
+# Retorna se eh uma senha valida ou nao
 def avalia_senha(senha, pessoa):
-	#Verifica se ja nao existe alguem com essa senha
+	# Verifica se ja nao existe alguem com essa senha
 	for linha in pessoa:
 		if senha == linha[1]:
 			print ('Ja existe uma pessoa com essa senha! Tente outra!')
 			return False
-	#Verifica se nao faz parte das senhas que devemos evitar
+	# Verifica se nao faz parte das senhas que devemos evitar
 	with open(senhas_ruins, 'r') as arq:
 		arqCsv = csv.reader(arq)
 		for linha in arqCsv:
 			if linha[0] == senha:
 				print ('Essa senha eh muito trivial! Escolha outra!')
 				return False
-	#Senha ok
+	# Senha ok
 	return True
 
 
-#Adiciona o usuario na lista em ordem alfabetica e salva no BD
+# Adiciona o usuario na lista em ordem alfabetica e salva no BD
 def adiciona_usuario():
 	with open(arquivo_senhas, 'r') as arq:
 		arqCsv = csv.reader(arq) #abre o arquivo csv com nomes e senhas
@@ -52,15 +52,15 @@ def adiciona_usuario():
 		for linha in arqCsv:
 			pessoa.append(linha)
 		print ("Escreva no teclado do computador o nome da pessoa a ser adicionada")
-		nome = input() #raw_input()
-		#Checa se ja nao ha alguem com este nome
+		nome = input() # raw_input()
+		# Checa se ja nao ha alguem com este nome
 		for linha in pessoa:
 			if linha[0] == nome:
 				print ('Ja existe alguem com este nome!')
 				return
 		print ("Escreva no teclado numerico a senha")
 		loop = True
-		#Cria um loop ateh a pessoa colocar uma senha valida
+		# Cria um loop ateh a pessoa colocar uma senha valida
 		while loop:
 			senha = input() #le_teclado()
 			senha_criptografada_1 = criptografa(senha)
@@ -74,7 +74,7 @@ def adiciona_usuario():
 			else:
 				print ('Senhas nao sao iguais!')
 		pessoa.append([nome, senha_criptografada_1])
-		#Ordena nossa lista em ordem alfabetica
+		# Ordena nossa lista em ordem alfabetica
 		pessoa = sorted(pessoa)
 	with open(arquivo_senhas, 'w') as arq:
 		bd = csv.writer(arq)
@@ -142,3 +142,4 @@ while loop:
 		print ('Este nao eh um comando valido')
 
 print ('Obrigado e volte sempre!')
+

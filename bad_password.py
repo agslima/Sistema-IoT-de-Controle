@@ -19,7 +19,7 @@
 
 from function import *
 
-pasta_padrao = '' #'/etc/init.d/' #Diretorio em que se encontra os scripts e dados do sistema
+pasta_padrao = '' # '/etc/init.d/' #Diretorio em que se encontra os scripts e dados do sistema
 senhas_ruins = pasta_padrao + 'bad_password.csv'
 
 def adiciona_senha_ruim():
@@ -32,7 +32,7 @@ def adiciona_senha_ruim():
 		senha = input() #le_teclado()
 		senha_criptografada = criptografa(senha)
 
-		#Verifica se essa senha ja nao foi adicionada
+		# Verifica se essa senha ja nao foi adicionada
 		for linha in senha:
 			if linha == senha_criptografada:
 				print ('Essa senha ja foi adicionada!')
