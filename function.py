@@ -21,25 +21,25 @@ import hashlib
 import csv
 from time import sleep
 from datetime import datetime
-#import mraa
-#import pifacedigitalio
-#import pyupm_i2clcd as lcd
+# import mraa
+# import pifacedigitalio
+# import pyupm_i2clcd as lcd
 
-#relay_gpio = 22 #Pino que esta conectado o relay
-#relay = mraa.Gpio(relay_gpio) #Cria objeto relay com base no pino do relay
-#relay.dir(mraa.DIR_OUT) #Define que o pino do relay eh output
+# relay_gpio = 22 #Pino que esta conectado o relay
+# relay = mraa.Gpio(relay_gpio) #Cria objeto relay com base no pino do relay
+# relay.dir(mraa.DIR_OUT) #Define que o pino do relay eh output
 
 pasta_padrao = '' #Diretorio em que se encontra os scripts e dados do sistema
 arquivo_senhas = pasta_padrao + 'passwords.csv' #Nome do arquivo que armazena o Hash das senhas junto com o nome do portador da senha
 
 ####################### FUNCOES #########################
 
-#Abre a porta do laboratorio
+# Abre a porta do laboratorio
 # def abre_porta():
 #   toggle()
 
 
-#Ativa e desativa o relay rapidamente, criando um pulso
+# Ativa e desativa o relay rapidamente, criando um pulso
 # def toggle():
 #	pfd = pifacedigitalio.PiFaceDigital()
 #	pfd.relays[0].value = 1
@@ -57,7 +57,7 @@ def criptografa(senha):
 	return h2
 
 
-#Le o arquivo de senhas, e retorna a lista de pessoas e a lista de senhas
+# Le o arquivo de senhas, e retorna a lista de pessoas e a lista de senhas
 def le_arquivo_senhas():
 	pessoas = [] #Inicializa lista de pessoas
 	senhas = [] #Inicializa lista de senhas
@@ -69,7 +69,7 @@ def le_arquivo_senhas():
 		return (pessoas, senhas)
 
 
-#Verifica se a senha esta cadastrada, e se sim, retorna qual a pessoa da senha
+# Verifica se a senha esta cadastrada, e se sim, retorna qual a pessoa da senha
 def autentica(senha):
 	pessoas, senhas = le_arquivo_senhas()
 	senha_criptografada = criptografa(senha)
@@ -100,14 +100,14 @@ def adiciona_usuario():
 				raw_arq.write(pessoas[i] + ',' + senhas[i] + '\n')
 
 
-#Escreve uma mensagem de boas vindas no LCD com o primeiro nome da pessoa
+# Escreve uma mensagem de boas vindas no LCD com o primeiro nome da pessoa
 def da_boas_vindas(nome):
 	myLcd.clear()
 	string_tela = "Ola " + nome.split(' ')[0]
 	myLcd.write(string_tela)
 
 
-#Escreve uma solicitacao de senha para o usuario
+# Escreve uma solicitacao de senha para o usuario
 def solicita_senha():
 	myLcd.clear()
 	myLcd.setCursor(0,0)
@@ -116,7 +116,7 @@ def solicita_senha():
 	myLcd.write('e aperte Enter:')
 
 
-#Retorna a escrita do teclado, e escreve no LCD o numero de digitos apertados
+# Retorna a escrita do teclado, e escreve no LCD o numero de digitos apertados
 def le_teclado():
 	teclado = raw_input()  #open('/dev/hidraw0') #O teclado sempre se encontra nessa porta serial
 	lendo = True
