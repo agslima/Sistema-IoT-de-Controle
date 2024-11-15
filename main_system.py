@@ -22,8 +22,8 @@ from function import *
 
 ############# DEFINICOES ###########
 
-ERRO_LIMIT = 3 #Numero de tentativas permitidas antes de travar o sistema
-ERRO_TIME = 60 #Tempo inicial em que o sistema ficarah travado
+ERRO_LIMIT = 3 # Numero de tentativas permitidas antes de travar o sistema
+ERRO_TIME = 60 # Tempo inicial em que o sistema ficarah travado
 
 ####################### MAIN ################################
 
@@ -31,7 +31,7 @@ print ('Inicio do Sistema.')
 erro = 0
 bloqueado = False
 contador = 0
-#solicita_senha()
+# solicita_senha()
 while True:
 	if not bloqueado:
 		print ('escreva a senha')
@@ -44,16 +44,16 @@ while True:
 		else:
 			erro += 1
 			print ('Senha incorreta')
-			#alerta_pessoa_nao_encontrada()
+			# alerta_pessoa_nao_encontrada()
 		if erro >= ERRO_LIMIT:
 			bloqueado = True
 			contador = ERRO_TIME
-			#alerta_travamento_sistema()
+			# alerta_travamento_sistema()
 			print ('Sistema travado')
 		sleep(3)
 	else:
-		#informa_tempo_restante(contador)
+		# informa_tempo_restante(contador)
 		contador -= 1
 		if contador <= 0:
 			bloqueado = False
-			#reseta_LCD()
+			# reseta_LCD()
