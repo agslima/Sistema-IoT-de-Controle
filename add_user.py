@@ -68,7 +68,7 @@ def adiciona_usuario():
 			senha = input() #le_teclado()
 			senha_criptografada_2 = criptografa(senha)
 			if senha_criptografada_1 == senha_criptografada_2:
-				#Se estiver tudo bem com a senha, sai do loop
+				# Se estiver tudo bem com a senha, sai do loop
 				if avalia_senha(senha_criptografada_1, pessoa):
 					loop = False
 			else:
@@ -84,7 +84,7 @@ def adiciona_usuario():
 
 
 def remove_usuario():
-	#Abre o arquivo do banco de dados
+	# Abre o arquivo do banco de dados
 	with open(arquivo_senhas) as arq:
 		arqPessoas = csv.reader(arq)
 		pessoa = []
@@ -93,7 +93,7 @@ def remove_usuario():
 		print ('Escreva o nome da pessoa que deseja remover')
 		nome = input() #raw_input()
 		removi = False
-		#Procura a pessoa
+		# Procura a pessoa
 		for i in range(len(pessoa)):
 			if pessoa[i][0] == nome:
 				print ('Tem certeza que deseja remover ' + nome + '? [s/n]')
@@ -114,7 +114,7 @@ def remove_usuario():
 
 ######################### MAIN #######################
 
-#Mantem o loop de interacao com o usuario para remover e adicionar quantas pessaos forem necessarias
+# Mantem o loop de interacao com o usuario para remover e adicionar quantas pessaos forem necessarias
 loop = True
 while loop:
 	print ('\nDigite [1] para adicionar um membro')
