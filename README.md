@@ -18,5 +18,4 @@ documentação das funções.
 Bibliotecas usadas
 
 https://github.com/intel-iot-devkit/mraa/blob/master/docs/building.md
-
 https://learn.sparkfun.com/tutorials/installing-libmraa-on-ubilinux-for-edison/all
