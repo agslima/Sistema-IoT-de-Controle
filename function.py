@@ -172,4 +172,4 @@ def informa_tempo_restante(tempo):
 
 
 def reseta_LCD():
-	myLcd.setColor(53, 39, 249) #cor de fundo em RGB
+	myLcd.setColor(53, 39, 249) # cor de fundo em RGB

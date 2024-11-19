@@ -35,7 +35,7 @@ contador = 0
 while True:
 	if not bloqueado:
 		print ('escreva a senha')
-		senha = input() #le_teclado()
+		senha = input() # le_teclado()
 		pessoa = autentica(senha)
 		if pessoa:
 			erro = 0
