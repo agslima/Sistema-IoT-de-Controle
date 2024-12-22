@@ -23,14 +23,14 @@ from function import *
 ############# DEFINICOES ###########
 
 ERRO_LIMIT = 3 # Numero de tentativas permitidas antes de travar o sistema
-ERRO_TIME = 60 # Tempo inicial em que o sistema ficarah travado
+ERRO_TIME  = 60 # Tempo inicial em que o sistema ficarah travado
 
 ####################### MAIN ################################
 
 print ('Inicio do Sistema.')
-erro = 0
+erro      = 0
 bloqueado = False
-contador = 0
+contador  = 0
 # solicita_senha()
 while True:
 	if not bloqueado:
