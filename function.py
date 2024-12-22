@@ -29,8 +29,8 @@ from datetime import datetime
 # relay = mraa.Gpio(relay_gpio) #Cria objeto relay com base no pino do relay
 # relay.dir(mraa.DIR_OUT) #Define que o pino do relay eh output
 
-pasta_padrao = '' #Diretorio em que se encontra os scripts e dados do sistema
-arquivo_senhas = pasta_padrao + 'passwords.csv' #Nome do arquivo que armazena o Hash das senhas junto com o nome do portador da senha
+pasta_padrao = '' # Diretorio em que se encontra os scripts e dados do sistema
+arquivo_senhas = pasta_padrao + 'passwords.csv' # Nome do arquivo que armazena o Hash das senhas junto com o nome do portador da senha
 
 ####################### FUNCOES #########################
 
@@ -47,23 +47,23 @@ arquivo_senhas = pasta_padrao + 'passwords.csv' #Nome do arquivo que armazena o 
 #	pfd.relays[0].value = 0
 
 
-#Recebe uma senha e retorna o hash dela em MD5
+# Recebe uma senha e retorna o hash dela em MD5
 def criptografa(senha):
 #	m = hashlib.md5()
 #	m.update(senha.encode())
 #	return m.hexdigest()
-	h = hashlib.md5(senha.encode())
+	h  = hashlib.md5(senha.encode())
 	h2 = h.hexdigest()
 	return h2
 
 
 # Le o arquivo de senhas, e retorna a lista de pessoas e a lista de senhas
 def le_arquivo_senhas():
-	pessoas = [] #Inicializa lista de pessoas
-	senhas = [] #Inicializa lista de senhas
+	pessoas = [] # Inicializa lista de pessoas
+	senhas  = [] # Inicializa lista de senhas
 	with open(arquivo_senhas, 'r') as raw_arq:
-		arq_senhas = csv.reader(raw_arq) #abre o arquivo csv com nomes e senhas
-		for linha in arq_senhas: #percorre o arquivo de pessoas e coloca os dados numa lista
+		arq_senhas = csv.reader(raw_arq) # abre o arquivo csv com nomes e senhas
+		for linha in arq_senhas: # percorre o arquivo de pessoas e coloca os dados numa lista
 			pessoas.append(linha[0])
 			senhas.append(linha[1])
 		return (pessoas, senhas)
@@ -75,8 +75,8 @@ def autentica(senha):
 	senha_criptografada = criptografa(senha)
 	for i in range(len(senhas)):
 		if senhas[i] == senha_criptografada:
-			return pessoas[i] #Retorna o nome da pessoa
-	return False #Retorna que nao encontrou ninguem
+			return pessoas[i] # Retorna o nome da pessoa
+	return False # Retorna que nao encontrou ninguem
 
 
 def adiciona_usuario():
@@ -84,12 +84,12 @@ def adiciona_usuario():
 	with open(arquivo_senhas, 'r') as raw_arq:
 		arq_senhas = csv.reader(raw_arq) #abre o arquivo csv com nomes e senhas
 		pessoas = []
-		senhas = []
+		senhas  = []
 		for linha in arq_senhas: #percorre o arquivo de pessoas e coloca os dados numa lista
 			pessoas.append(linha[0])
 			senhas.append(linha[1])
 		print ("Escreva o nome da pessoa a ser adicionada")
-		nome = input() #raw_input()
+		nome  = input() #raw_input()
 		print ("Escreva a senha no teclado numerico")
 		senha = input() #le_teclado()
 		senha_criptografada = criptografa(senha)
@@ -119,12 +119,12 @@ def solicita_senha():
 # Retorna a escrita do teclado, e escreve no LCD o numero de digitos apertados
 def le_teclado():
 	teclado = raw_input()  #open('/dev/hidraw0') #O teclado sempre se encontra nessa porta serial
-	lendo = True
+	lendo   = True
 	apagado = False
-	linha = ''
+	linha   = ''
 	while lendo:
 		linha = linha + str(teclado.read(1))
-		tam = len(linha)//40
+		tam   = len(linha)//40
 		if linha:
 			if not apagado:
 				#myLcd.clear()
