@@ -20,8 +20,8 @@
 
 from function import *
 
-pasta_padrao = '' # Diretorio em que se encontra os scripts e dados do sistema
-senhas_ruins = pasta_padrao + 'bad_password.csv'
+pasta_padrao   = '' # Diretorio em que se encontra os scripts e dados do sistema
+senhas_ruins   = pasta_padrao + 'bad_password.csv'
 arquivo_senhas = pasta_padrao + 'passwords.csv' # Nome do arquivo que armazena o Hash das senhas junto com o nome do portador da senha
 
 ########################## FUNCTIONS ################################
