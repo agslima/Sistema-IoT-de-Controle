@@ -35,7 +35,7 @@ contador = 0
 while True:
 	if not bloqueado:
 		print ('escreva a senha')
-		senha = input() # le_teclado()
+		senha  = input() # le_teclado()
 		pessoa = autentica(senha)
 		if pessoa:
 			erro = 0
@@ -47,9 +47,9 @@ while True:
 			# alerta_pessoa_nao_encontrada()
 		if erro >= ERRO_LIMIT:
 			bloqueado = True
-			contador = ERRO_TIME
-			# alerta_travamento_sistema()
+			contador  = ERRO_TIME
 			print ('Sistema travado')
+			# alerta_travamento_sistema()			
 		sleep(3)
 	else:
 		# informa_tempo_restante(contador)
