@@ -20,10 +20,10 @@
 import hashlib
 
 senha = input()
-# m = hashlib.md5()
+# m  = hashlib.md5()
 # m.update(senha.encode())
 # m2 = m.hexdigest()
 # print (m2)
-h = hashlib.md5(senha.encode())
+h  = hashlib.md5(senha.encode())
 h2 = h.hexdigest()
 print (h2)
