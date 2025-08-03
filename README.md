@@ -73,6 +73,8 @@ Usuários são armazenados em um arquivo CSV, com estrutura semelhante a:
 nome,senha_md5
 joao,e99a18c428cb38d5f260853678922e03
 
+---
+
 ## ⚙️ Tecnologias e Bibliotecas
 
 Este projeto utiliza as seguintes tecnologias e bibliotecas:
@@ -87,8 +89,9 @@ Este projeto utiliza as seguintes tecnologias e bibliotecas:
 
 - 📦 MRAA (biblioteca para interação com GPIO e sensores)
 
+---
 
-##📚 Referências:
+## 📚 Referências:
 
 [![Intel IoT DevKit – MRAA Build Docs](https://github.com/intel-iot-devkit/mraa/blob/master/docs/building.md)]
 
