@@ -90,7 +90,7 @@ Este projeto utiliza as seguintes tecnologias e bibliotecas:
 
 ##📚 Referências:
 
-[Intel IoT DevKit – MRAA Build Docs](https://github.com/intel-iot-devkit/mraa/blob/master/docs/building.md)
+[![Intel IoT DevKit – MRAA Build Docs](https://github.com/intel-iot-devkit/mraa/blob/master/docs/building.md)]
 
 [SparkFun - Instalação MRAA]
 (https://learn.sparkfun.com/tutorials/installing-libmraa-on-ubilinux-for-edison/all)
