@@ -1,3 +1,4 @@
+<!--
 [![license](https://img.shields.io/github/license/agslima/Sistema-IoT-de-Controle?style=flat-square)](https://raw.githubusercontent.com/agslima/Sistema-IoT-de-Controle/master/LICENSE)
 
 # Sistema de Controle IoT
@@ -21,3 +22,53 @@ Bibliotecas usadas:
 https://github.com/intel-iot-devkit/mraa/blob/master/docs/building.md
 
 https://learn.sparkfun.com/tutorials/installing-libmraa-on-ubilinux-for-edison/all
+-->
+
+# 📡 Sistema de Controle IoT
+
+[![license](https://img.shields.io/github/license/agslima/Sistema-IoT-de-Controle?style=flat-square)](https://raw.githubusercontent.com/agslima/Sistema-IoT-de-Controle/master/LICENSE)
+
+Sistema simples para controle de **entrada e saída de usuários**, implementado em **Raspberry Pi** com conceitos de **IoT** e **criptografia**.
+
+---
+
+## 🎯 Objetivo
+
+Desenvolver um mini sistema capaz de:
+
+- Identificar usuários via senha criptografada
+- Gerenciar permissões de entrada/saída
+- Armazenar dados localmente em formato `.csv`
+- Executar em dispositivos de baixo custo com Linux embarcado
+
+> O projeto utiliza **criptografia MD5** para proteger senhas de usuários e permite operações básicas de administração.
+
+---
+
+## 🛠️ Scripts principais
+
+O sistema é dividido em diferentes scripts Python, cada um com sua responsabilidade:
+
+| Script             | Função principal                                                |
+|--------------------|------------------------------------------------------------------|
+| `main_system.py`   | Script principal — entrada do sistema (controle geral)          |
+| `function.py`      | Conjunto de funções que implementam a lógica de autenticação    |
+| `add_user.py`      | Adição e remoção de usuários no sistema                         |
+| `bad_password.py`  | Lista de senhas inseguras para evitar durante cadastro          |
+
+---
+
+## 🔒 Segurança
+
+- As senhas são armazenadas com **hash MD5**
+- O sistema rejeita senhas inseguras usando uma blacklist (`bad_password.py`)
+
+---
+
+## 💾 Estrutura de Dados
+
+Usuários são armazenados em um arquivo CSV, com estrutura semelhante a:
+
+```csv
+nome,senha_md5
+joao,e99a18c428cb38d5f260853678922e03
