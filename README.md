@@ -69,9 +69,9 @@ O sistema é dividido em diferentes scripts Python, cada um com sua responsabili
 
 Usuários são armazenados em um arquivo CSV, com estrutura semelhante a:
 
-`csv
+``csv
 nome,senha_md5
-joao,e99a18c428cb38d5f260853678922e03`
+joao,e99a18c428cb38d5f260853678922e03``
 
 
 ---
@@ -94,7 +94,7 @@ Este projeto utiliza as seguintes tecnologias e bibliotecas:
 
 ## 📚 Referências:
 
-[![Intel IoT DevKit – MRAA Build Docs](https://github.com/intel-iot-devkit/mraa/blob/master/docs/building.md)]
+[Intel IoT DevKit – MRAA Build Docs](https://github.com/intel-iot-devkit/mraa/blob/master/docs/building.md)
 
 [SparkFun - Instalação MRAA]
 (https://learn.sparkfun.com/tutorials/installing-libmraa-on-ubilinux-for-edison/all)
