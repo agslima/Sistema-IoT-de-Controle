@@ -31,7 +31,7 @@ https://learn.sparkfun.com/tutorials/installing-libmraa-on-ubilinux-for-edison/a
 Sistema simples para controle de **entrada e saída de usuários**, implementado em **Raspberry Pi** com conceitos de **IoT** e **criptografia**.
 
 
-## 🎯 Objetivo
+### 🎯 Objetivo
 
 Desenvolver um mini sistema capaz de:
 
@@ -43,7 +43,7 @@ Desenvolver um mini sistema capaz de:
 > O projeto utiliza **criptografia MD5** para proteger senhas de usuários e permite operações básicas de administração.
 
 
-## 🛠️ Scripts principais
+### 🛠️ Scripts principais
 
 O sistema é dividido em diferentes scripts Python, cada um com sua responsabilidade:
 
@@ -55,13 +55,13 @@ O sistema é dividido em diferentes scripts Python, cada um com sua responsabili
 | `bad_password.py`  | Lista de senhas inseguras para evitar durante cadastro          |
 
 
-## 🔒 Segurança
+### 🔒 Segurança
 
 - As senhas são armazenadas com **hash MD5**
 - O sistema rejeita senhas inseguras usando uma blacklist (`bad_password.py`)
 
 
-## 💾 Estrutura de Dados
+### 💾 Estrutura de Dados
 
 Usuários são armazenados em um arquivo CSV, com estrutura semelhante a:
 
@@ -70,7 +70,7 @@ nome,senha_md5
 joao,e99a18c428cb38d5f260853678922e03
 ```
 
-## ⚙️ Tecnologias e Bibliotecas
+### ⚙️ Tecnologias e Bibliotecas
 
 Este projeto utiliza as seguintes tecnologias e bibliotecas:
 
@@ -84,7 +84,7 @@ Este projeto utiliza as seguintes tecnologias e bibliotecas:
 
 - 📦 MRAA (biblioteca para interação com GPIO e sensores)
 
-## 📚 Referências:
+### 📚 Referências:
 
 [Intel IoT DevKit – MRAA Build Docs](https://github.com/intel-iot-devkit/mraa/blob/master/docs/building.md)
 
