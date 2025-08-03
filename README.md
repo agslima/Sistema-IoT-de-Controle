@@ -25,7 +25,10 @@ https://learn.sparkfun.com/tutorials/installing-libmraa-on-ubilinux-for-edison/a
 -->
 
 # 📡 Sistema de Controle IoT
-
+[![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![CSV](https://img.shields.io/badge/Data-CSV-yellow?style=flat-square&logo=filezilla&logoColor=white)]()
+[![Criptografia](https://img.shields.io/badge/Hash-MD5-critical?style=flat-square&logo=lock&logoColor=white)](https://en.wikipedia.org/wiki/MD5)
+[![license](https://img.shields.io/github/license/agslima/Sistema-IoT-de-Controle?style=flat-square)](https://raw.githubusercontent.com/agslima/Sistema-IoT-de-Controle/master/LICENSE)
 [![license](https://img.shields.io/github/license/agslima/Sistema-IoT-de-Controle?style=flat-square)](https://raw.githubusercontent.com/agslima/Sistema-IoT-de-Controle/master/LICENSE)
 
 Sistema simples para controle de **entrada e saída de usuários**, implementado em **Raspberry Pi** com conceitos de **IoT** e **criptografia**.
@@ -74,17 +77,6 @@ joao,e99a18c428cb38d5f260853678922e03
 
 Este projeto utiliza as seguintes tecnologias e bibliotecas:
 
-## 🚀 Tecnologias Utilizadas
-
-<p align="center">
-  <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" />
-  <img height="40" src="https://img.icons8.com/fluency/48/000000/csv.png" title="CSV" />
-  <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Raspberry_Pi_Logo.svg" title="Raspberry Pi" />
-  <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Linux_Mint_logo_without_wordmark.svg" title="Linux Embarcado" />
-  <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Gnu-octave-logo.svg" title="Biblioteca Científica" />
-  <img height="40" src="https://seeklogo.com/images/G/gpio-logo-6DC812D792-seeklogo.com.png" title="GPIO" />
-  <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/OpenSSL_Logo.svg/512px-OpenSSL_Logo.svg.png" title="MD5 / Hashlib" />
-</p>
 - 🐍 Python 3
 
 - 🔐 Criptografia MD5 (usando hashlib)
