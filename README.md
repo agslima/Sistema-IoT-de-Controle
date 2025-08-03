@@ -72,3 +72,27 @@ Usuários são armazenados em um arquivo CSV, com estrutura semelhante a:
 ```csv
 nome,senha_md5
 joao,e99a18c428cb38d5f260853678922e03
+
+## ⚙️ Tecnologias e Bibliotecas
+
+Este projeto utiliza as seguintes tecnologias e bibliotecas:
+
+- 🐍 Python 3
+
+- 🔐 Criptografia MD5 (usando hashlib)
+
+- 📂 CSV (armazenamento de dados)
+
+- 📟 Raspberry Pi (hardware de baixo custo)
+
+- 📦 MRAA (biblioteca para interação com GPIO e sensores)
+
+
+##📚 Referências:
+
+[Intel IoT DevKit – MRAA Build Docs](https://github.com/intel-iot-devkit/mraa/blob/master/docs/building.md)
+
+[SparkFun - Instalação MRAA]
+(https://learn.sparkfun.com/tutorials/installing-libmraa-on-ubilinux-for-edison/all)
+
+
