@@ -74,6 +74,17 @@ joao,e99a18c428cb38d5f260853678922e03
 
 Este projeto utiliza as seguintes tecnologias e bibliotecas:
 
+## 🚀 Tecnologias Utilizadas
+
+<p align="center">
+  <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" />
+  <img height="40" src="https://img.icons8.com/fluency/48/000000/csv.png" title="CSV" />
+  <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Raspberry_Pi_Logo.svg" title="Raspberry Pi" />
+  <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Linux_Mint_logo_without_wordmark.svg" title="Linux Embarcado" />
+  <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Gnu-octave-logo.svg" title="Biblioteca Científica" />
+  <img height="40" src="https://seeklogo.com/images/G/gpio-logo-6DC812D792-seeklogo.com.png" title="GPIO" />
+  <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/OpenSSL_Logo.svg/512px-OpenSSL_Logo.svg.png" title="MD5 / Hashlib" />
+</p>
 - 🐍 Python 3
 
 - 🔐 Criptografia MD5 (usando hashlib)
