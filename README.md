@@ -28,7 +28,7 @@ https://learn.sparkfun.com/tutorials/installing-libmraa-on-ubilinux-for-edison/a
 [![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![CSV](https://img.shields.io/badge/Data-CSV-yellow?style=flat-square&logo=filezilla&logoColor=white)]()
 [![Criptografia](https://img.shields.io/badge/Hash-MD5-critical?style=flat-square&logo=lock&logoColor=white)](https://en.wikipedia.org/wiki/MD5)
-[![license](https://img.shields.io/github/license/agslima/Sistema-IoT-de-Controle?style=flat-square)](https://raw.githubusercontent.com/agslima/Sistema-IoT-de-Controle/master/LICENSE)
+[![Raspberry Pi](https://img.shields.io/badge/Hardware-Raspberry%20Pi-C51A4A?style=flat-square&logo=raspberry-pi&logoColor=white)](https://www.raspberrypi.com/)
 [![license](https://img.shields.io/github/license/agslima/Sistema-IoT-de-Controle?style=flat-square)](https://raw.githubusercontent.com/agslima/Sistema-IoT-de-Controle/master/LICENSE)
 
 Sistema simples para controle de **entrada e saída de usuários**, implementado em **Raspberry Pi** com conceitos de **IoT** e **criptografia**.
