@@ -72,7 +72,7 @@ Usuários são armazenados em um arquivo CSV, com estrutura semelhante a:
 ```csv
 nome,senha_md5
 joao,e99a18c428cb38d5f260853678922e03
-
+```
 
 ---
 
